@@ -1,12 +1,13 @@
 import "../styles/Entry.css"
 
 export default function Entry(props) {
-    const { img, location, title, dates, text, googleMapsLink } = props;
+    console.log(props)
+    const { img, location, title, dates, text, googleMapsLink } = props.entry;
     
     return (
         <div className="entry-container">
             <div className="entry-image-container">
-                <img className="entry-image" src={img} alt={location} />
+                <img className="entry-image" src={img.src} alt={location} />
             </div>
             <div className="entry-content-container">
                 <div className="entry-location-row">

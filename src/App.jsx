@@ -12,12 +12,7 @@ export default function App() {
       {entries.map((entry) => (
         <Entry 
           key={entry.id}
-          img={entry.img.src}
-          location={entry.img.alt}
-          title={entry.title}
-          dates={entry.dates}
-          text={entry.text}
-          googleMapsLink={entry.googleMapsLink}
+          entry={entry}
         />
       ))}
     </>
