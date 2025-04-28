@@ -2,7 +2,7 @@ import "../styles/Entry.css"
 
 export default function Entry(props) {
     console.log(props)
-    const { img, location, title, dates, text, googleMapsLink } = props.entry;
+    const { img, location, title, dates, text, googleMapsLink } = props;
     
     return (
         <div className="entry-container">
